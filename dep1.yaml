@@ -1,5 +1,5 @@
 resources:
-  - name: dep1
+  - name: vm-created-by-cloud-config-dep1
     type: compute.v1.instance
     properties:
       zone: us-central1-a
@@ -13,4 +13,4 @@ resources:
             diskName: disk-created-by-cloud-config
             sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-7-wheezy-v20151104
             networkInterfaces:
-              - network: https://www.googleapis.com/compute/v1/projects/gcp-bot-test/global/networks/default
+               - network: https://www.googleapis.com/compute/v1/projects/gcp-bot-test/global/networks/default
