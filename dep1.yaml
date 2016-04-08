@@ -2,8 +2,8 @@ resources:
   - name: vm-created-by-cloud-config-dep1
     type: compute.v1.instance
     properties:
-      zone: us-central1-a
-      machineType: https://www.googleapis.com/compute/v1/projects/gcp-bot-test/zones/us-central1-a/machineTypes/n1-standard-1
+      zone: us-central1-f
+      machineType: https://www.googleapis.com/compute/v1/projects/bamboo-machine-127513/zones/us-central1-f/machineTypes/n1-standard-1
       disks:
         - deviceName: boot
           type: PERSISTENT
@@ -13,4 +13,4 @@ resources:
             diskName: disk-created-by-cloud-config
             sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-7-wheezy-v20151104
       networkInterfaces:
-         - network: https://www.googleapis.com/compute/v1/projects/gcp-bot-test/global/networks/default
+         - network: https://www.googleapis.com/compute/v1/projects/bamboo-machine-127513/global/networks/default
