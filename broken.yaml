@@ -10,7 +10,7 @@ resources:
           boot: true
           autoDelete: true
           initializeParams:
-            diskName: disk-created-by-cloud-config
+            diskName: disk-created-by-cloud-configX
             sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-7-wheezy-v20151104
       networkInterfaces:
          - network: https://www.googleapis.com/compute/v1/projects/bamboo-machine-127513/global/networks/default
@@ -25,7 +25,7 @@ resources:
           boot: true
           autoDelete: true
           initializeParams:
-            diskName: disk-created-by-cloud-config2
+            diskName: disk-created-by-cloud-configX
             sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-7-wheezy-v20151104
       networkInterfaces:
          - network: https://www.googleapis.com/compute/v1/projects/bamboo-machine-127513/global/networks/default
