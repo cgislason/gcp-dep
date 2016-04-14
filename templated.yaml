@@ -1,0 +1,6 @@
+imports:
+- path: "vm_template.jinja"
+
+resources:
+- name: my-vm
+  type: vm_template.jinja
