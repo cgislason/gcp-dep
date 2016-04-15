@@ -1,8 +1,5 @@
-imports:
-- path: "vm_template2.jinja"
-
 resources:
-- name: my-vm-template
+- name: my-vm-template2
   type: compute.v1.instance
   properties:
     zone: us-central1-a
@@ -13,9 +10,7 @@ resources:
       boot: true
       autoDelete: true
       initializeParams:
-        diskName: disk-created-by-cloud-config
+        diskName: disk-created-by-cloud-config2
         sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-7-wheezy-v20140619
     networkInterfaces:
     - network: https://www.googleapis.com/compute/v1/projects/{{ env["project"] }}/global/networks/default
-- name: my-vm2
-  type: vm_template2.jinja
